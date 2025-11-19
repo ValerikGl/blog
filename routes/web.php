@@ -13,6 +13,8 @@ Route::get('/page2', [PublicController::class, 'page2'])->name('page2');
 Route::get('/post/{post}', [PublicController::class, 'post'])->name('post');
 Route::get('/tag/{tag}', [Publiccontroller::class, 'tag'])->name('tag');
 Route::get('/category/{category}', [Publiccontroller::class, 'category'])->name('category');
+Route::get('/user/{user}', [PublicController::class, 'user'])->name('user.posts');
+
 
 // Route::get('/admin/posts', [PostController::class, 'index'])->name('posts.index');
 // Route::get('/admin/posts/create', [PostController::class, 'create'])->name('posts.create');
